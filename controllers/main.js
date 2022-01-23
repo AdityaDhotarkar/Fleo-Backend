@@ -76,8 +76,8 @@ module.exports.updateCategory = async(req, res) => {
             progressLabel : progressLabel
         };
         res.status(200).json(data);
-        const comp = await company.updateOne({_id : req.body.id}, data);
-        console.log("Company updated successfully with id: " + comp.id);
+        const comp = await company.updateOne({name : req.body.name}, data);
+        console.log("Company updated successfully with name: " + comp.name);
 
     }
     catch(err){
