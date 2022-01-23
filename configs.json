@@ -1,0 +1,6 @@
+{
+    "mongoDbServer": "mongodb+srv://",
+    "mongoDbUsername": "aditya",
+    "mongoDbPassword": "aditya",
+    "mongoDbName": "fleo"
+}
