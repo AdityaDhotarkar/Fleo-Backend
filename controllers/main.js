@@ -88,8 +88,8 @@ module.exports.updateCategory = async(req, res) => {
 
 module.exports.deleteCategory = async(req, res) => {
     try{
-        const comp = await company.deleteOne({_id : req.body.name});
-        console.log("Company deleted successfully with id: " + comp.id);
+        const comp = await company.deleteOne({name : req.body.name});
+        console.log("Company deleted successfully with name " + comp.name);
         res.status(200).json(comp);
     }
     catch(err){

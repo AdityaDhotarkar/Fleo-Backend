@@ -11,6 +11,7 @@ app.use(cors())
 
 app.post('/create', companyController.createCategory);
 app.post('/update', companyController.updateCategory);
+app.post('/delete', companyController.deleteCategory);
 
 var port = process.env.PORT || 8000; 
 app.listen(port);
