@@ -12,7 +12,7 @@ class Database {
   }
 
 _connect() {
-     mongoose.connect(`mongodb+srv://aditya:aditya@cluster0.wsmtx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` , {
+     mongoose.connect(`mongodb+srv://${dbUsername}:${dbPassword}@cluster0.wsmtx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` , {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }).then(() => {
